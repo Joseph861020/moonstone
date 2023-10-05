@@ -1,0 +1,122 @@
+body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #4CAF50, #2196F3, hwb(282 5% 22%));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+    
+    .main-title img{
+        width: 270px;
+        height: 150px;
+        margin:auto;
+        height: fit-content;
+    }
+
+    .main-title {
+        padding: 10px;
+        background: linear-gradient(to left, #4CAF50, #2196F3, hwb(282 5% 22%));
+        color: rgb(239, 237, 237);
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row; /* change the flex-direction to column */
+        align-items: center;
+        justify-content: center; /* change the justify-content to center */
+    }
+    
+    .main-title h1 {
+        font-size: 40px;
+        margin-top: 20px; /* add a top margin to create space */
+    }
+    
+
+        .container {
+            display: flex;
+            flex: 1;
+            max-width: 1200px;
+            margin: auto;
+            
+            overflow: hidden;
+            margin-top: 160px;
+        }
+
+        .menu {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+           
+        }
+        .menu ul {
+                list-style-type: none;
+                padding: 0;
+        }
+
+        .menu-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #2196F3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-link {
+            color: rgb(239, 237, 237);
+            text-decoration: none;
+        }
+
+        .menu-item:hover {
+            text-decoration: color-mix(in lch longer hue, color 50, color 50);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(1.2);
+        }
+
+
+        .content {
+            flex: 3;
+            padding: 30px;
+            overflow-y: auto;
+            font-size: larger;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .text h1 {
+            margin-top: 0;
+        }
+        .text a{
+            text-decoration: none;
+            color: rgb(20, 20, 20);
+        }
+        .text > a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        
+
+        .footer {
+            background-color: #ffffff00;
+            padding: 20px;
+            text-align: center;
+            color: rgb(35, 8, 61);
+        }
